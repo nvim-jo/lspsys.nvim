@@ -107,13 +107,13 @@ function sd:layout_float(opt)
 
   if ui.title then
     if opt.buffer then
-      float_opt.title = 'Buffer'
+      float_opt.title = ' Buffer '
     elseif opt.line then
-      float_opt.title = 'Line'
+      float_opt.title = ' Line '
     elseif opt.cursor then
-      float_opt.title = 'Cursor'
+      float_opt.title = ' Cursor '
     else
-      float_opt.title = 'Workspace'
+      float_opt.title = ' Workspace '
     end
     float_opt.title_pos = 'center'
   end
