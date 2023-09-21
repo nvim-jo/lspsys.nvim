@@ -58,6 +58,13 @@ function hover:open_floating_preview(content, option_fn)
     zindex = 80,
   }
 
+  if config.ui.title then
+    float_option.title =  { 
+      { '  '..config.ui.hover, 'Exception' },
+      { ' Docs  ', 'TitleString' }
+    }
+  end
+
   local in_codeblock = false
 
   for _, line in ipairs(content) do
